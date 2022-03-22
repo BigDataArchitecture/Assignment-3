@@ -7,6 +7,17 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+/notebooks
+notebooks/
+
+data/
+API/tensorflow-2.4.1-py3-none-any.whl
+API/bigdata-assignment-340502-6247253b4b16.json
+API/Intermediate_Files/
+API/Models/
+API/Prediction/
+
+
 .Python
 build/
 develop-eggs/
