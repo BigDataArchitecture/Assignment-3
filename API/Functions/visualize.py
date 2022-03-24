@@ -64,8 +64,8 @@ def visualize_result(models,x_test,y_test,idx,ax,path,labels):
         y_preds.append(yp*norm['scale']+norm['shift'])
         print(len(y_preds))
         print(y_preds[0].shape)
-    with h5py.File(path + "/Prediction/Array/Y_Pred.h5", 'w') as data:
-        data['Pred'] = y_preds[0]
+    # with h5py.File(path + "/Prediction/Array/Y_Pred.h5", 'w') as data:
+    #     data['Pred'] = y_preds[0]
 
     for i in range(0,12,3):
         ax[i//3][2].imshow(y_test[0,:,:,i],**cmap_dict('vil'))
@@ -107,5 +107,7 @@ def visualize_result(models,x_test,y_test,idx,ax,path,labels):
     ax[-1][-1].legend(handles=legend_elements, loc='lower right', bbox_to_anchor= (-5.4, -.35), 
                            ncol=5, borderaxespad=0, frameon=False, fontsize='16')
     plt.subplots_adjust(hspace=0.05, wspace=0.05)
+
+    return y_preds[0]
 
     

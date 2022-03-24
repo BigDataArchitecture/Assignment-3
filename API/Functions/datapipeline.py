@@ -3,7 +3,8 @@ import numpy as np
 import os
 
 def run(eventid,file, end):
-    parent_dir = "/Users/parthshah/Documents/Northeastern/Spring2022/BigDataAnalytics/Assignment3/API/Intermediate_Files/"
+    # parent_dir = "/Users/parthshah/Documents/Northeastern/Spring2022/BigDataAnalytics/Assignment3/API/Intermediate_Files/"
+    path = "Dummy Variable plz delete"
     data_path = "/Users/parthshah/Documents/Northeastern/Spring2022/BigDataAnalytics/Assignment3/data/raw/VIL_H5_Files/"
     file_path = data_path + file.split("/")[2]
     print(file_path)
@@ -14,23 +15,23 @@ def run(eventid,file, end):
     res = {'IN':[],"OUT":[]}
     for i in vil:
         split_data(i, res)
-    path = os.path.join(parent_dir, str(eventid))
-    try: 
-        os.mkdir(path) 
-        os.mkdir(path+'/Prediction')
-        os.mkdir(path+'/Prediction/Array')
-        os.mkdir(path+'/Prediction/Images')
-        os.mkdir(path+'/Prediction/Images/12Images')
-    except OSError as error: 
-        print(error)  
+    # path = os.path.join(parent_dir, str(eventid))
+    # try: 
+    #     os.mkdir(path) 
+    #     os.mkdir(path+'/Prediction')
+    #     os.mkdir(path+'/Prediction/Array')
+    #     os.mkdir(path+'/Prediction/Images')
+    #     os.mkdir(path+'/Prediction/Images/12Images')
+    # except OSError as error: 
+    #     print(error)  
     res["IN"] = np.array(res["IN"])
     res["OUT"] = np.array(res["OUT"])
 
-    with h5py.File(path+"/data.h5", 'w') as data:
-        data['IN'] = res["IN"]
-        data['OUT'] = res["OUT"]
-    print("Testing data saved to:",path)
-    return path
+    # with h5py.File(path+"/data.h5", 'w') as data:
+    #     data['IN'] = res["IN"]
+    #     data['OUT'] = res["OUT"]
+    # print("Testing data saved to:",path)
+    return path,res
 
 
 def split_data(array, res):

@@ -15,7 +15,7 @@ from matplotlib.lines import Line2D
 import matplotlib.patches as patches
 import pandas as pd
 
-def predict(path,Model,index):
+def predict(path,Model,index,res):
     path
     print("loading Model:",Model)
     gan_model = 0
@@ -26,7 +26,8 @@ def predict(path,Model,index):
     model_mapping = {"gan_generator":gan_model,"mse_and_style":mse_style_model,"style":style_model,"mse_file":mse_model}
             
     print("Loading Data")
-    x_test,y_test = read_data(path+"/data.h5")
+    print("one sample file",res.keys())
+    x_test,y_test = read_data(res)
     print(x_test.shape,y_test.shape)
     if Model == "gan_generator":
         path_file ="./Models/gan_generator.h5"
@@ -39,8 +40,9 @@ def predict(path,Model,index):
     
     idx=index # adjust this to pick a case
     fig,ax = plt.subplots(4,7,figsize=(10,5), gridspec_kw={'width_ratios': [1,1,1,1,1,1,1]})
-    visualize.visualize_result([tf.keras.models.load_model(path_file,compile=False,custom_objects={"tf": tf})],x_test,y_test,idx,ax,path,labels=[Model])
-    fig.savefig(path + '/Prediction/Images/Prediction.png')    
+    y_pred = visualize.visualize_result([tf.keras.models.load_model(path_file,compile=False,custom_objects={"tf": tf})],x_test,y_test,idx,ax,path,labels=[Model])
+    # fig.savefig(path + '/Prediction/Images/Prediction.png')    
     print("Saved Outputs")
+    return y_pred
     
         

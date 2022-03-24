@@ -22,9 +22,11 @@ def read_data(filename, rank=0, size=1, end=None, dtype=np.float32, MEAN=33.44, 
     x_keys = ['IN']
     y_keys = ['OUT']
     s = np.s_[rank:end:size]
-    with h5py.File(filename, mode='r') as hf:
-        IN  = hf['IN'][s]
-        OUT = hf['OUT'][s]
+    IN = filename['IN'][s]
+    OUT = filename['OUT'][s]
+    # with h5py.File(filename, mode='r') as hf:
+    #     IN  = hf['IN'][s]
+    #     OUT = hf['OUT'][s]
     IN = (IN.astype(dtype)-MEAN)/SCALE
     OUT = (OUT.astype(dtype)-MEAN)/SCALE
     return IN,OUT

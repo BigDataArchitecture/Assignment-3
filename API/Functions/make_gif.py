@@ -23,4 +23,4 @@ def save_fig(path):
         plt.savefig(path + "/Prediction/Images/12images/"+ str(i)+".png")
     make_gif(path)
 
-save_fig("/Users/parthshah/Documents/Northeastern/Spring2022/BigDataAnalytics/Assignment3/API/Intermediate_Files/694474")
+# save_fig("/Users/parthshah/Documents/Northeastern/Spring2022/BigDataAnalytics/Assignment3/API/Intermediate_Files/694474")
