@@ -1,25 +1,25 @@
 Assignment3
 ==============================
 
-Creating FASTApi for Maritime Nowcasting
+**Creating FASTAPI for Maritime Nowcasting**
 
 Lets do some basics first! 
 
 Why is API required?
-Well, API allows us to share our results with the world in easier way!
-Imagine you running the the SEVIR model and sharing the images over email! One time its fine! Again and Again its a pain.
-So we have the API. Request as many outputs no limits on our Maritme API.
+Well, API allows us to share our results with the world in an easy way!
+Imagine you are running the SEVIR model and sharing the images over email! One time its fine! Again and again its a pain.
+So we have the API. Request as many outputs, no limits on our Maritme API.
 
-Our Maritime API will take 13 images as input and output a set of 12 Image arrays. These are predictions of next one hour of images
+Our Maritime API will take 13 images as input and output a set of 12 Image arrays. These are predictions of next one hour of images.
 
 Our API Documentation: https://documenter.getpostman.com/view/5665918/UVyn1JLo
 
 New to API and dont know how to access it? Sit tight from here on we will explain you in detail everything
 
 1) In API we have endpoints, endpoint is same as a "door" to something
-We have 4 Endpoints(gates)
+We have the following endpoints(gates) for our Maritime usecase:
 
-a) /nowcast_results/forecast/
+a) **/nowcast_results/forecast/**
 
 Description: This endpoint will help you forecast next one hour of weather images depending on the input time and location you give it in the input parameters.
 
@@ -32,8 +32,13 @@ Input Parameters:
     -- begin_time : Time
     -- model: 
     -- index (Optional):
+    
+ Sample input:
+ 
+ ![image](https://user-images.githubusercontent.com/78776808/160177154-2f91ee83-9b58-4d69-9857-f1d766864385.png)
 
-b) /nowcast_results/forecast/latlong/
+
+b) **/nowcast_results/forecast/latlong/**
 
 Description: This endpoint will help you forecast next one hour of weather images depending on the input latitude, longitude and distance you give it in the input parameters.
 Input parameters:
