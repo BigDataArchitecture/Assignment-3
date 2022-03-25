@@ -42,7 +42,7 @@ Description: This endpoint will help you forecast next one hour of weather image
 Input parameters:
     -- lat: Latitude
     -- lon: Longitude
-    -- distance: 
+    -- distance: Distance value to predict the weather for the nearest loicat
     -- model:
     -- index(Optional): 
 
@@ -63,3 +63,11 @@ Input Parameters:
 d) /nowcast_results/backtest/latlong/
 
 Description: This endpoint will help you backtest the model based on the input latitude, longitude and distance in the input parameters.
+Input parameters:
+    -- lat: Latitude
+    -- lon: Longitude
+    -- distance: Distance 
+    -- model:
+    -- index(Optional): 
+
+
