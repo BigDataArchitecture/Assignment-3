@@ -45,7 +45,7 @@ Description: This endpoint will help you forecast next one hour of weather image
 Input parameters:
 - lat: Latitude
 - lon: Longitude
-- distance: Distance value to predict the weather for the nearest loicat
+- distance: Distance value to predict the weather for the nearest location
 - model:
 - index(Optional): 
 
