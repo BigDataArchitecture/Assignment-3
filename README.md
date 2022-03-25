@@ -44,3 +44,10 @@ Input parameters:
     -- distance: Distance value to predict the weather for the nearest loicat
     -- model:
     -- index(Optional): 
+    
+    
+    
+To make requests to our API head towards: https://bigdata-assignment-340502.ue.r.appspot.com
+
+If it is difficult for you to access the API you can also use our webapp to forecast
+https://share.streamlit.io/shahparth0007/maritime_streamlit/main/streamlit.py
