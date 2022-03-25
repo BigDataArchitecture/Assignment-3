@@ -12,8 +12,7 @@ So we have the API. Request as many outputs no limits on our Maritme API.
 
 Our Maritime API will take 13 images as input and output a set of 12 Image arrays. These are predictions of next one hour of images
 
-How to Access our API?
-You can go to out API link: 
+Our API Documentation: https://documenter.getpostman.com/view/5665918/UVyn1JLo
 
 and make some requests
 
@@ -45,29 +44,3 @@ Input parameters:
     -- distance: Distance value to predict the weather for the nearest loicat
     -- model:
     -- index(Optional): 
-
-
-c) /nowcast_results/backtest/
-
-Description: This endpoint will help you backtest the model based on the input time and location in the input parameters.
-
-Input Parameters: 
-    -- begin_location: City Name
-    -- begin_yearmonth: Year-Month
-    -- begin_day: Day
-    -- begin_time : Time
-    -- model: 
-    -- index (Optional):
-
-
-d) /nowcast_results/backtest/latlong/
-
-Description: This endpoint will help you backtest the model based on the input latitude, longitude and distance in the input parameters.
-Input parameters:
-    -- lat: Latitude
-    -- lon: Longitude
-    -- distance: Distance 
-    -- model:
-    -- index(Optional): 
-
-
