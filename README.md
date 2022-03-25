@@ -51,6 +51,7 @@ Input parameters:
 
 Sample input: 
 
+![image](https://user-images.githubusercontent.com/78776808/160180937-b192ced4-0073-404c-82be-6641b7e5a3d6.png)
 
 
 Error Handling:
