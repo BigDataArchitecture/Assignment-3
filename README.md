@@ -60,7 +60,9 @@ We handled error with the help of different ports. So status 200 will not come u
 2) status_code=406 for "Invalid Model Name"
 3) status_code=200 for "Correct Response"
 
-    
+
+**Resources**:
+
 To make requests to our API head towards: https://bigdata-assignment-340502.ue.r.appspot.com
 
 If it is difficult for you to access the API you can also use our webapp to forecast
