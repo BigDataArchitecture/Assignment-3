@@ -10,7 +10,7 @@ Well, API allows us to share our results with the world in easier way!
 Imagine you running the the SEVIR model and sharing the images over email! One time its fine! Again and Again its a pain.
 So we have the API. Request as many outputs no limits on our Maritme API.
 
-Our Maritime API will take 13 images as input and output you set of 12 Image arrays. This are predictions of next one hour of images
+Our Maritime API will take 13 images as input and output a set of 12 Image arrays. These are predictions of next one hour of images
 
 How to Access our API?
 You can go to out API link: 
