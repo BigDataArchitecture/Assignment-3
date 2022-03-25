@@ -26,12 +26,12 @@ Description: This endpoint will help you forecast next one hour of weather image
 Note: Model and index in this parameters are optional. But you can give 
 
 Input Parameters: 
-    - begin_location: City Name
-    - begin_yearmonth: Year-Month
-    - begin_day: Day
-    - begin_time : Time
-    - model: 
-    - index (Optional):
+- begin_location: City Name
+- begin_yearmonth: Year-Month
+- begin_day: Day
+- begin_time : Time
+- model: 
+- index (Optional):
     
  Sample input:
  
@@ -43,11 +43,11 @@ b) **/nowcast_results/forecast/latlong/**
 Description: This endpoint will help you forecast next one hour of weather images depending on the input latitude, longitude and distance you give it in the input parameters.
 
 Input parameters:
-    - lat: Latitude
-    - lon: Longitude
-    - distance: Distance value to predict the weather for the nearest loicat
-    - model:
-    - index(Optional): 
+- lat: Latitude
+- lon: Longitude
+- distance: Distance value to predict the weather for the nearest loicat
+- model:
+- index(Optional): 
 
 Sample input: 
 
