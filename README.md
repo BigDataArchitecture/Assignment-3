@@ -35,19 +35,23 @@ Input Parameters:
     
  Sample input:
  
- ![image](https://user-images.githubusercontent.com/78776808/160177154-2f91ee83-9b58-4d69-9857-f1d766864385.png)
+ ![image](https://user-images.githubusercontent.com/78776808/160180751-9b040734-1136-4edc-9716-2057ec9091cc.png)
 
 
 b) **/nowcast_results/forecast/latlong/**
 
 Description: This endpoint will help you forecast next one hour of weather images depending on the input latitude, longitude and distance you give it in the input parameters.
+
 Input parameters:
     -- lat: Latitude
     -- lon: Longitude
     -- distance: Distance value to predict the weather for the nearest loicat
     -- model:
     -- index(Optional): 
-    
+
+Sample input: 
+
+
 
 Error Handling:
 We handled error with the help of different ports. So status 200 will not come up when you have an error fetching data from API
