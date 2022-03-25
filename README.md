@@ -14,8 +14,6 @@ Our Maritime API will take 13 images as input and output a set of 12 Image array
 
 Our API Documentation: https://documenter.getpostman.com/view/5665918/UVyn1JLo
 
-and make some requests
-
 New to API and dont know how to access it? Sit tight from here on we will explain you in detail everything
 
 1) In API we have endpoints, endpoint is same as a "door" to something
@@ -45,7 +43,13 @@ Input parameters:
     -- model:
     -- index(Optional): 
     
-    
+
+Error Handling:
+We handled error with the help of different ports. So status 200 will not come up when you have an error fetching data from API
+1) status_code=404 for "Event not found"
+2) status_code=406 for "Invalid Model Name"
+3) status_code=200 for "Correct Response"
+
     
 To make requests to our API head towards: https://bigdata-assignment-340502.ue.r.appspot.com
 
