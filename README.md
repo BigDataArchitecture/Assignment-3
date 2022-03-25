@@ -26,12 +26,12 @@ Description: This endpoint will help you forecast next one hour of weather image
 Note: Model and index in this parameters are optional. But you can give 
 
 Input Parameters: 
-    -- begin_location: City Name
-    -- begin_yearmonth: Year-Month
-    -- begin_day: Day
-    -- begin_time : Time
-    -- model: 
-    -- index (Optional):
+    * begin_location: City Name
+    * begin_yearmonth: Year-Month
+    * begin_day: Day
+    * begin_time : Time
+    * model: 
+    * index (Optional):
     
  Sample input:
  
