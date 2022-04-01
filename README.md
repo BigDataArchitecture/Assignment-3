@@ -69,3 +69,8 @@ If it is difficult for you to access the API you can also use our webapp to fore
 https://share.streamlit.io/shahparth0007/maritime_streamlit/main/streamlit.py
 
 Our interactive documentation can be found at: https://codelabs-preview.appspot.com/?file_id=1vumBYhWdUXLwhrP6iGQABHu8i544Ttf8cyGpZ35OFkM#0
+
+
+WE ATTEST THAT WE HAVEN’T USED ANY OTHER STUDENTS’ WORK IN OUR ASSIGNMENT AND ABIDE BY THE POLICIES LISTED IN THE STUDENT HANDBOOK
+
+Contribution: Parth: 60% Sree: 20% Ankana: 20%
