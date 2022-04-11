@@ -73,4 +73,4 @@ Our interactive documentation can be found at: https://codelabs-preview.appspot.
 
 WE ATTEST THAT WE HAVEN’T USED ANY OTHER STUDENTS’ WORK IN OUR ASSIGNMENT AND ABIDE BY THE POLICIES LISTED IN THE STUDENT HANDBOOK
 
-Contribution: Parth: 60% Sree: 20% Ankana: 20%
+Contribution: Parth: 40% Sree: 30% Ankana: 30%
